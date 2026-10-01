@@ -4,10 +4,7 @@ import br.com.senac.projeto_spring_aula.todolist.model.ListaEntity;
 import br.com.senac.projeto_spring_aula.todolist.model.ListaPostDto;
 import br.com.senac.projeto_spring_aula.todolist.model.ListaStatus;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/lista")
@@ -25,4 +22,11 @@ public class ToDoListController {
 
         return listaRepository.save(listaEntity);
     }
+
+    @DeleteMapping
+
 }
+
+
+
+
